@@ -43,7 +43,7 @@ var staff = {
 		walt:{bio: 'Walt is our Oregon Coast expert.'},
 	},
 };
-
+//多个参数
 app.get('/staff/:city/:name',function(req, res, next){
 	var info = staff[req.params.city][req.params.name];
 	if (!info) {return next();};
